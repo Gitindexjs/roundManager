@@ -16,3 +16,5 @@ const msg = require('./Events/msg');
 
 ready.run(discord, client);
 msg.run(discord, client);
+
+client.login(process.env.TOKEN)
