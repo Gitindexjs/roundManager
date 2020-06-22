@@ -1,7 +1,7 @@
-// exports
+//exports
 
 module.exports.run = (discord, client) => {
-    client.on("ready", () => {
+    setInterval(() => {
         let guilds = 0;
         let serverend = "";
         client.guilds.cache.forEach(guild => guilds++);
@@ -15,5 +15,5 @@ module.exports.run = (discord, client) => {
                 url: "https://www.twitch.tv/tapl"
             }
         });
-    })
+    }, 600000);
 }
