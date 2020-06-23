@@ -6,6 +6,7 @@ const config = require("../config.json");
 
 const help = require('../cmds/help');
 const kick = require('../cmds/kick');
+const ban = require('../cmds/ban');
 
 // exports
 
@@ -20,6 +21,9 @@ module.exports.run = (discord, client) => {
             break;
             case 'kick':
                 kick.run(discord, client, msg, args);
+            break;
+            case 'ban':
+                ban.run(discord, client, msg, args)
             break;
         }
     })
