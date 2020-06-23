@@ -12,7 +12,7 @@ module.exports.run = (discord, client) => {
     client.on("message", async msg => {
         const content = msg.content;
         const args = content.substring(config.prefix.length).split(" ");
-        if(!content.startsWith(prefix)) return;
+        if(!content.startsWith(config.prefix)) return;
         switch(args[0]){
             case "help":
                 help.run(discord, client, msg, args);
