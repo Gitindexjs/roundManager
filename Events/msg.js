@@ -5,6 +5,7 @@ const config = require("../config.json");
 // cmds imports
 
 const help = require('../cmds/help');
+const kick = require('../cmds/kick');
 
 // exports
 
@@ -16,6 +17,9 @@ module.exports.run = (discord, client) => {
         switch(args[0]){
             case "help":
                 help.run(discord, client, msg, args);
+            break;
+            case 'kick':
+                kick.run(discord, client, msg, args);
             break;
         }
     })
