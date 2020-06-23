@@ -21,5 +21,6 @@ module.exports.run = (discord, client, msg, args) => {
         logs.send(banEmbed);
     } catch(error) {
         msg.reply('Bot has missing permissions');
+        console.log(error)
     }
 }
