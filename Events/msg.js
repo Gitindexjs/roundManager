@@ -11,7 +11,7 @@ const kill = require('../cmds/kill');
 
 // exports
 
-module.exports.run = (discord, client) => {
+exports.run = (discord, client) => {
     client.on("message", async msg => {
         const content = msg.content;
         const args = content.substring(config.prefix.length).split(" ");

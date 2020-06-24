@@ -1,6 +1,6 @@
 // exports 
 
-module.exports.run = (discord, client, msg, args) => {
+exports.run = (discord, client, msg, args) => {
     try{
         if(!args[1]){
             return msg.reply('You didn\'t provide a user')

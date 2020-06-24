@@ -1,6 +1,6 @@
 // exports
 
-module.exports.run = (discord, client, msg, args) => {
+exports.run = (discord, client, msg, args) => {
     try {
         const embed = new discord.MessageEmbed()
             .setTitle("help")

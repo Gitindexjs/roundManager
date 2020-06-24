@@ -1,4 +1,4 @@
-module.exports.run = (discord, client, msg, args) => {
+exports.run = (discord, client, msg, args) => {
     try{
         if(!msg.member.hasPermission("KICK_MEMBERS")) return msg.reply('You don\'t have permission to use that command!');
         let kickTarget = msg.mentions.members.first() || msg.guild.members.cache.find(member => member.user.username === args[1]) || msg.guild.members.cache.find(member => member.nickname === args[1]);

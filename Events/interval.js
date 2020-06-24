@@ -1,6 +1,6 @@
 //exports
 
-module.exports.run = (discord, client) => {
+exports.run = (discord, client) => {
     setInterval(() => {
         let guilds = 0;
         let serverend = "";

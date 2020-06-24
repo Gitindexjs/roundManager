@@ -1,6 +1,6 @@
 // exports
 
-module.exports.run = (discord, client) => {
+exports.run = (discord, client) => {
     client.on("ready", () => {
         let guilds = 0;
         let serverend = "";
